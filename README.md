@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running
 
-Things you may want to cover:
+Run the project using:
 
-* Ruby version
+```
+bin/rails server
+```
 
-* System dependencies
+And check the behavior in http://localhost:3000/
 
-* Configuration
+## Versions
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ruby "3.1.2"
+- rails "7.0.3.1"
+- turbo-rails "1.1.1"
+- view_component "2.61.1"
