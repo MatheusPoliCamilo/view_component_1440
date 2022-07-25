@@ -1,5 +1,7 @@
 # README
 
+https://github.com/github/view_component/issues/1440
+
 ## Running
 
 Run the project using:
