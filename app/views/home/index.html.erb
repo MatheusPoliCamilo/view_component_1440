@@ -1,0 +1,39 @@
+<h1>Using partial</h1>
+
+<turbo-frame id="using_partial" style="border: 1px solid red; padding: 1rem;">
+  Partial turbo frame
+</turbo-frame>
+
+<div style="margin-top: 2rem;">
+  <%= form_with(method: :post, url: test_partial_path, data: { "turbo-frame": "using_partial" }) do |form| %>
+    <%= form.submit "Update turbo frame with POST" %>
+  <% end %>
+</div>
+
+<hr>
+
+<h1>Using ViewComponent (POST)</h1>
+
+<turbo-frame id="post_using_view_component" style="border: 1px solid red; padding: 1rem;">
+  View component turbo frame
+</turbo-frame>
+
+<div style="margin-top: 2rem;">
+  <%= form_with(method: :post, url: test_view_component_path, data: { "turbo-frame": "post_using_view_component" }) do |form| %>
+    <%= form.submit "Update turbo frame with POST" %>
+  <% end %>
+</div>
+
+<hr>
+
+<h1>Using ViewComponent (GET)</h1>
+
+<turbo-frame id="get_using_view_component" style="border: 1px solid red; padding: 1rem;">
+  View component turbo frame
+</turbo-frame>
+
+<div style="margin-top: 2rem;">
+  <%= form_with(method: :get, url: test_view_component_path, data: { "turbo-frame": "get_using_view_component" }) do |form| %>
+    <%= form.submit "Update turbo frame with GET" %>
+  <% end %>
+</div>

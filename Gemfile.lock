@@ -153,6 +153,10 @@ GEM
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
+    turbo-rails (1.1.1)
+      actionpack (>= 6.0.0)
+      activejob (>= 6.0.0)
+      railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     view_component (2.61.1)
@@ -172,8 +176,9 @@ DEPENDENCIES
   rails (~> 7.0.3, >= 7.0.3.1)
   sprockets-rails
   sqlite3 (~> 1.4)
+  turbo-rails (= 1.1.1)
   tzinfo-data
-  view_component
+  view_component (= 2.61.1)
 
 RUBY VERSION
    ruby 3.1.2p20
