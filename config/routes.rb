@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root "home#index"
   resource :test_partial, only: [:create]
   resource :test_view_component, only: [:create, :show]
+  resource :workaround, only: [:create]
 end

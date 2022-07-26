@@ -37,3 +37,17 @@
     <%= form.submit "Update turbo frame with GET" %>
   <% end %>
 </div>
+
+<hr>
+
+<h1>Workaround (POST + text/html content type)</h1>
+
+<turbo-frame id="workaround" style="border: 1px solid red; padding: 1rem;">
+  View component turbo frame
+</turbo-frame>
+
+<div style="margin-top: 2rem;">
+  <%= form_with(method: :post, url: workaround_path, data: { "turbo-frame": "workaround" }) do |form| %>
+    <%= form.submit "Update turbo frame with POST" %>
+  <% end %>
+</div>
